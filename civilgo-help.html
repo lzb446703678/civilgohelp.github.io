@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivilGo检测助手</title>
+    <link rel="icon" href="https://img.101jc.com/img/civilgo_favicon.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin:  auto;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 2.5rem;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        h1 {
+            color: #2d3436;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .announcement {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .announcement p {
+            color: #636e72;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+
+        .highlight {
+            color: #0984e3;
+            font-weight: 600;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .link-card {
+            border: 2px solid #dfe6e9;
+            border-radius: 0.8rem;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .link-card:hover {
+            transform: translateY(-5px);
+            border-color: #0984e3;
+            box-shadow: 0 5px 15px rgba(9, 132, 227, 0.15);
+        }
+
+        .link-card a {
+            text-decoration: none;
+            color: #2d3436;
+            display: block;
+        }
+
+        .link-title {
+            font-weight: 500;
+            font-size: 1.1rem;
+        }
+
+        .url {
+            color: #0984e3;
+            font-size: 0.85em;
+            margin-top: 0.8rem;
+            word-break: break-all;
+        }
+
+        .notice {
+            text-align: center;
+            color: #636e72;
+            margin-top: 2rem;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 1.5rem;
+            }
+            
+            .header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="https://img.101jc.com/img/logo.png" alt="CivilGo Logo">
+            </div>
+            <h1>CivilGo检测助手</h1>
+        </header>
+
+        <div class="announcement">
+            <p>尊敬的CivilGo用户：</p>
+            <p>因业务调整升级，网站入口已由原域名 <span class="highlight">tools.civilgo.cn</span> 统一迁移至主域名 <span class="highlight">civilgo.cn</span>。</p>
+            <p>我们重新规划了功能版块入口，为您带来更优质的服务体验：</p>
+        </div>
+
+        <div class="links">
+            <div class="link-card">
+                <a href="https://civilgo.cn/tools">
+                    <div class="link-title">🧰 工具箱</div>
+                    <span class="url">civilgo.cn/tools</span>
+                    <p style="margin-top:0.5rem;color:#636e72;font-size:0.9em">在线检测工具合集</p>
+                </a>
+            </div>
+            <div class="link-card">
+                <a href="https://civilgo.cn/blog">
+                    <div class="link-title">📚 白话检测</div>
+                    <span class="url">civilgo.cn/blog</span>
+                    <p style="margin-top:0.5rem;color:#636e72;font-size:0.9em">开发中……</p>
+                </a>
+            </div>
+            <div class="link-card">
+                <a href="https://civilgo.cn/software">
+                    <div class="link-title">💻 桌面软件</div>
+                    <span class="url">civilgo.cn/software</span>
+                    <p style="margin-top:0.5rem;color:#636e72;font-size:0.9em">迁移中……</p>
+                </a>
+            </div>
+
+        </div>
+
+        <p class="notice">感谢您的理解与支持！由此带来的不便，敬请谅解。</p>
+    </div>
+</body>
+</html>
